@@ -49,7 +49,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: darkblue;
+  color: #507790;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -58,13 +58,13 @@ body {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #0000f1;
+  color: #89a9bd;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #00003f; }
+  background: #354e5f; }
 
 /*********************************************
  * IMAGES
@@ -82,7 +82,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: darkblue;
+  border-color: #507790;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -90,31 +90,31 @@ body {
  *********************************************/
 .reveal .controls div.navigate-left,
 .reveal .controls div.navigate-left.enabled {
-  border-right-color: darkblue; }
+  border-right-color: #507790; }
 
 .reveal .controls div.navigate-right,
 .reveal .controls div.navigate-right.enabled {
-  border-left-color: darkblue; }
+  border-left-color: #507790; }
 
 .reveal .controls div.navigate-up,
 .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: darkblue; }
+  border-bottom-color: #507790; }
 
 .reveal .controls div.navigate-down,
 .reveal .controls div.navigate-down.enabled {
-  border-top-color: darkblue; }
+  border-top-color: #507790; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #0000f1; }
+  border-right-color: #89a9bd; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #0000f1; }
+  border-left-color: #89a9bd; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #0000f1; }
+  border-bottom-color: #89a9bd; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #0000f1; }
+  border-top-color: #89a9bd; }
 
 /*********************************************
  * PROGRESS BAR
@@ -123,7 +123,7 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: darkblue;
+  background: #507790;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
@@ -134,7 +134,10 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-  color: darkblue; }
+  color: #507790; }
+
+.reveal strong {
+  font-weight: 900; }
 
 .reveal h1,
 .reveal h2,
@@ -144,21 +147,32 @@ body {
 .reveal h6 {
   font-weight: 900; }
 
-.reveal section.present {
-  line-height: 1.5em; }
+.reveal .slides > section.present,
+.reveal .slides > section > section.present {
+  line-height: 1.5em;
+  height: 100%; }
+
+.reveal .slides > section, .reveal .slides > section > section {
+  padding: 0; }
 
 .reveal .slides {
   text-align: left; }
 
-.reveal .slides > section {
-  left: -50%;
-  top: -60%; }
-
 .reveal p {
   margin: 1em 0; }
 
+.reveal ol, .reveal ul {
+  position: relative;
+  left: -1em; }
+
 .reveal section img {
-  margin: 15px 0px;
+  margin: 1em 0;
   background: rgba(255, 255, 255, 0.12);
   border: none;
   box-shadow: 0 0 1em #999; }
+
+.reveal section img.full {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  height: 100%; }

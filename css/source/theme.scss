@@ -25,7 +25,7 @@ $headingColor: #000;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #fff;
-$linkColor: #00008B;
+$linkColor: rgb(80, 119, 144);
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
@@ -34,6 +34,10 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 // Theme template ------------------------------
 @import "../../bower_components/reveal.js/css/theme/template/theme";
 // ---------------------------------------------
+
+.reveal strong {
+  font-weight: 900;
+}
 
 .reveal h1,
 .reveal h2,
@@ -44,22 +48,35 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
   font-weight: 900;
 }
 
-.reveal section.present {
+.reveal .slides>section.present,
+.reveal .slides>section>section.present {
   line-height: 1.5em;
+  height: 100%;
 }
+.reveal .slides>section, .reveal .slides>section>section {
+  padding: 0;
+}
+
 .reveal .slides {
   text-align: left;
-}
-.reveal .slides>section {
-  left: -50%;
-  top: -60%;
 }
 .reveal p {
   margin: 1em 0;
 }
+.reveal ol, .reveal ul {
+  position: relative;
+  left: -1em;
+}
 .reveal section img {
-  margin: 15px 0px;
+  margin: 1em 0;
   background: rgba(255,255,255,0.12);
   border: none;
   box-shadow: 0 0 1em #999;
 }
+.reveal section img.full {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+}
+
