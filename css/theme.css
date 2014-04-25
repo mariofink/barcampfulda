@@ -145,7 +145,10 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  font-weight: 900; }
+  font-weight: 900;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none; }
 
 .reveal .slides > section.present,
 .reveal .slides > section > section.present {

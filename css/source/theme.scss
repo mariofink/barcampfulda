@@ -46,6 +46,9 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 .reveal h5,
 .reveal h6 {
   font-weight: 900;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
 }
 
 .reveal .slides>section.present,
