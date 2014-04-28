@@ -20,16 +20,18 @@
 // Override theme settings (see ../template/settings.scss)
 $mainFont: 'Lato', sans-serif;
 $mainColor: #000;
-$headingFont: 'Lato';
+$headingFont: 'Lato', sans-serif;
 $headingColor: #000;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $backgroundColor: #fff;
 $linkColor: rgb(80, 119, 144);
-$linkColorHover: lighten( $linkColor, 20% );
+$linkColorHover: saturate(lighten( $linkColor, 20% ),20%);
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
-
+.reveal a:hover {
+  text-decoration: underline !important;
+}
 
 // Theme template ------------------------------
 @import "../../bower_components/reveal.js/css/theme/template/theme";
@@ -85,4 +87,3 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
   margin: 0 auto;
   height: 100%;
 }
-

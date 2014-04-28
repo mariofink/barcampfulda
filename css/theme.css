@@ -6,6 +6,9 @@
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic);
+.reveal a:hover {
+  text-decoration: underline !important; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -36,7 +39,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: black;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
   text-transform: none;
@@ -58,7 +61,7 @@ body {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #89a9bd;
+  color: #76add0;
   text-shadow: none;
   border: none; }
 
@@ -105,16 +108,16 @@ body {
   border-top-color: #507790; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #89a9bd; }
+  border-right-color: #76add0; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #89a9bd; }
+  border-left-color: #76add0; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #89a9bd; }
+  border-bottom-color: #76add0; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #89a9bd; }
+  border-top-color: #76add0; }
 
 /*********************************************
  * PROGRESS BAR
